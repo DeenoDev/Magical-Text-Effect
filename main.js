@@ -13,13 +13,13 @@ const animate = star => {
   star.style.animation = "";
 }
 
-for(const star of document.getElementsByClassName("magic-star")) {
-  setTimeout(() => {
-    animate(star);
+ for(const star of document.getElementsByClassName("magic-star")) {
+   setTimeout(() => {
+     animate(star);
     
-    setInterval(() => animate(star), 1000);
-  }, index++ * (interval / 3))
-}
+     setInterval(() => animate(star), 1000);
+   }, index++ * (interval / 3))
+ }
 
 /* -- ↓↓↓ If you want the sparkle effect to only occur on hover, replace lines 16 and on with this code ↓↓↓ -- */
 
